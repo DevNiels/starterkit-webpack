@@ -1,0 +1,31 @@
+﻿//Fonts
+// $prm-font: 'Source Sans Pro', sans-serif;
+// $scn-font: 'Shadows Into Light Two', cursive;
+$prm-font: 'Open Sans', sans-serif;
+
+
+// Color variables
+$white:                   #fff;
+$black:                   #000;
+
+// cuckoo / tmbw color coded
+$graydark:	#1A171B; // darkgray Logo
+$graylight:	#646567; // Font (Start page right box)
+$graylightest:	#C5C6C8; // lightgray Logo
+$gold:               #FCC200; // gold
+$blue:               #72A1C9; // lightblue
+$green:               #BECD00;  // green
+$magenta:               #CD0040;  // magenta-ish
+$purple:               #76004F;  // purple
+
+// Font style declarations
+$flight:				300;
+$fnormal:				400;
+$fsemi:				600;
+$fbold:				700;
+
+// Breakpoints
+$brkpoint-sm: 768px;
+$brkpoint-md: 992px;
+$brkpoint-lg: 1200px;
+$brkpoint-xxl: 1300px;

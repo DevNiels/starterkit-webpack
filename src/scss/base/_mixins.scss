@@ -1,0 +1,51 @@
+
+//  Media queries
+
+// Bsp. @include mq(sm) {  }
+
+@mixin mq($break){
+  @if $break == "maxXs" {
+    @media (max-width: $brkpoint-sm - 0.01) {
+      @content;
+    }
+  }
+  @else if $break == "maxSm" {
+    @media (max-width: $brkpoint-md - 0.01) {
+      @content;
+      
+    }
+  }
+  @else if $break == "maxMd" {
+    @media (max-width: $brkpoint-lg - 0.01) {
+      @content;
+    }
+  }
+  @else if $break == "maxLg" {
+    @media (max-width: $brkpoint-xxl - 0.01) {
+      @content;
+    }
+  }
+  @else if $break == "sm" {
+    @media (min-width: $brkpoint-sm) {
+      @content;
+    }
+  }
+  @else if $break == "md" {
+    @media (min-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "lg" {
+    @media (min-width: $brkpoint-lg){
+      @content;
+    }
+  }
+  @else if $break == "xxl" {
+    @media (min-width: $brkpoint-xxl){
+      @content;
+    }
+  }
+  @else {
+    @error "Whoops! Hast du max-xs, max-sm, max-md, max-lg, sm, md, lg oder xxl verwendet?"
+  }
+}
